@@ -30,14 +30,13 @@ require "wss4r/security/resolver"
 require "time"
 require "base64"
 require "rexml/document"
+require "openssl/cipher"
 
 require "soap/rpc/driver"
 include SOAP
 
 include OpenSSL
 include OpenSSL::X509
-include OpenSSL::Digest
-include OpenSSL::Cipher
 include OpenSSL::PKey
 
 include WSS4R::Security::Xml

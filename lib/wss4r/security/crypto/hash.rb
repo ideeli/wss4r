@@ -1,6 +1,5 @@
 require "openssl"
 include OpenSSL
-include OpenSSL::Digest
 
 
 module WSS4R
@@ -10,8 +9,8 @@ module WSS4R
       class CryptHash
 
 	def initialize(type = "SHA1")
-          @digest = SHA1.new() if (type == "SHA1")
-          @digest = MD5.new()  if (type == "MD5")
+          @digest = OpenSSL::Digest::SHA1.new() if (type == "SHA1")
+          @digest = OpenSSL::Digest::MD5.new()  if (type == "MD5")
 	end
 	
 	def digest(value)
