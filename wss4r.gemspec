@@ -6,41 +6,6 @@ WSS4R_FILES = %w{
   gpl
   rubys
   copying
-  lib/config/config.rb
-  lib/rpc/proxy.rb
-  lib/rpc/router.rb
-  lib/rpc/wssdriver.rb
-  lib/security/crypto/certificate.rb
-  lib/security/crypto/cipher.rb
-  lib/security/crypto/hash.rb
-  lib/security/exceptions/exception.rb
-  lib/security/resolver.rb
-  lib/security/security.rb 
-  lib/security/util/hash_util.rb
-  lib/security/util/names.rb
-  lib/security/util/namespaces.rb
-  lib/security/util/soap_parser.rb
-  lib/security/util/transformer_factor.rb
-  lib/security/util/types.rb
-  lib/security/util/xmlcanconicalizer.rb
-  lib/security/util/xmlutils.rb
-  lib/security/xml/encrypted_data.rb
-  lib/security/xml/encrypted_key.rb
-  lib/security/xml/key_info.rb
-  lib/security/xml/reference.rb
-  lib/security/xml/reference_list.rb
-  lib/security/xml/security.rb
-  lib/security/xml/signature.rb
-  lib/security/xml/signature_value.rb
-  lib/security/xml/signed_info.rb
-  lib/security/xml/timestamp.rb
-  lib/security/xml/tokentypes.rb
-  lib/server/wssstandaloneserver.rb
-  lib/soap/processor.rb
-  lib/tokenresolver/authenticateuserresolver.rb
-  lib/tokenresolver/certificateresolver.rb
-  lib/tokenresolver/databaseresolver.rb
-  lib/tokenresolver/resolver.rb
   util/create_x509cert.rb
   util/DumpPrivateKey.class
   util/encrypt_xml.rb
@@ -53,7 +18,6 @@ WSS4R_FILES = %w{
   xml/wse-usernametoken.xml
   xml/wss4r-encrypted-signed.xml
   xml/wss4r-encrypted.xml
-  xml/ws4r-plain.xml
   xml/wss4r-signed-encrypted.xml
   xml/wss4r-signed.xml
   xml/wss4r-usernametoken.xml
@@ -75,9 +39,9 @@ Gem::Specification.new do |s|
 
   s.date = "2005-12-22"
   s.description = "Partial implementation of some of the WS-Security standards on top of SOAP4R."
-  
+
   s.files = WSS4R_FILES
-  
+
   s.has_rdoc = false
   s.homepage = "http://rubyforge.org/projects/wss4r/"
   s.require_paths = ["lib", "xml"]
