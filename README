@@ -64,7 +64,7 @@ For a list of changes see "CHANGELOG".
         (tested with version 1.1.0)
 		  
 = 3. Installation
-	Simply do 
+	Simply do (in the root folder)
 	   
 	    ruby setup.rb
 		 

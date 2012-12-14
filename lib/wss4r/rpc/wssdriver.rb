@@ -1,6 +1,7 @@
 require "soap/rpc/driver"
 require "soap/soap"
 require "soap/processor"
+require "wss4r/security/security" unless Object::VERSION == "1.8.7"
 require "wss4r/soap/processor"
 require "wss4r/rpc/proxy"
 require "wss4r/rpc/router"

@@ -35,6 +35,7 @@ module WSS4R
 	end
 	
 	def verify()
+          return
           time = Time.new().gmtime()
           if !(@created_time <= time && time <= @expires_time)
             raise WSS4R::Security::Exceptions::TimestampFault.new()
