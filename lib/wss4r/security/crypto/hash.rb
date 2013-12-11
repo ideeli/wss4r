@@ -1,6 +1,6 @@
 require "openssl"
 include OpenSSL
-include OpenSSL::Digest unless Object::VERSION == "1.8.7"
+#include OpenSSL::Digest unless Object::VERSION == "1.8.7"
 
 
 module WSS4R
