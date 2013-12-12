@@ -37,8 +37,8 @@ include SOAP
 
 include OpenSSL
 include OpenSSL::X509
-include OpenSSL::Digest unless Object::VERSION == "1.8.7"
-include OpenSSL::Cipher unless Object::VERSION == "1.8.7"
+#include OpenSSL::Digest unless Object::VERSION == "1.8.7"
+#include OpenSSL::Cipher unless Object::VERSION == "1.8.7"
 include OpenSSL::PKey
 
 include WSS4R::Security::Xml
